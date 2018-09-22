@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.peoplethink.governmentjob.util.layout.CustomAppBarLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+style="@style/ToolBarStyle">
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:popupTheme="@style/Toolbar_Popup"
+    app:layout_scrollFlags="scroll|enterAlways|snap"/>
+
+    <android.support.design.widget.TabLayout
+    android:id="@+id/tabs"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="?attr/colorPrimary"
+    app:tabGravity="fill"
+    app:tabIndicatorColor="@android:color/white"
+    app:tabSelectedTextColor="@android:color/white"
+    app:tabTextColor="@android:color/white"
+    app:tabMode="scrollable"
+    app:popupTheme="@style/Toolbar_Popup" />
+
+</com.peoplethink.governmentjob.util.layout.CustomAppBarLayout>

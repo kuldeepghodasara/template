@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/default_padding">
+
+        <ImageView
+            android:id="@+id/track_view_artwork"
+            android:src="@drawable/ic_launcher"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="start|top"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/track_view_artist"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:singleLine="true"
+            android:textColor="@color/track_view_artist"
+            tools:text="Title"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/track_view_artwork"
+            android:layout_toEndOf="@+id/track_view_artwork"
+            android:layout_toLeftOf="@+id/track_view_duration"
+            android:layout_toStartOf="@+id/track_view_duration" />
+
+        <TextView
+            android:id="@+id/track_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:gravity="top"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:singleLine="true"
+            android:textColor="@color/track_view_track"
+            tools:text="Body"
+            android:layout_below="@+id/track_view_artist"
+            android:layout_toRightOf="@+id/track_view_artwork"
+            android:layout_toEndOf="@+id/track_view_artwork" />
+
+        <TextView
+            android:id="@+id/track_view_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="@color/track_view_duration"
+            tools:text="1:30"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/track_more"
+            android:layout_toStartOf="@+id/track_more"
+            android:layout_alignBottom="@+id/track_more" />
+
+        <ImageView
+            android:id="@+id/track_more"
+            android:src="@drawable/ic_more_vert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/default_padding"
+        android:layout_marginRight="@dimen/default_padding"
+        android:background="@color/black_translucent"/>
+
+</RelativeLayout>

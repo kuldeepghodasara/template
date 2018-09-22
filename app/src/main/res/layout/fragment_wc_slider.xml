@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/woocommerce_padding"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/slider_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Here chips are inserted -->
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/latest_products"
+        android:textDirection="locale"
+        android:layout_margin="@dimen/woocommerce_padding"
+        android:paddingTop="10dp"
+        android:paddingLeft="@dimen/woocommerce_padding"
+        android:paddingStart="@dimen/woocommerce_padding"
+        android:textColor="@color/dim_gray"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="@dimen/textsize_xl"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:layout_gravity="start"
+        android:paddingLeft="@dimen/woocommerce_padding"
+        android:paddingStart="@dimen/woocommerce_padding"
+        android:layout_margin="@dimen/woocommerce_padding"
+        android:src="@color/myAccentColor"/>
+
+
+</LinearLayout>
+

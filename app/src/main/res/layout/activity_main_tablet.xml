@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- android:layout_marginTop="?android:attr/actionBarSize"-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="@dimen/drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        ads:headerLayout="@layout/drawer_top"
+        ads:menu="@menu/activity_main_drawer" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/adView">
+
+            <include
+                layout="@layout/toolbar_tabbar" />
+
+            <include layout="@layout/activity_main_content" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@color/btnGray"
+            ads:adUnitId="@string/admob_banner_id"
+            ads:adSize="SMART_BANNER"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

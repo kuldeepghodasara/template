@@ -1,0 +1,55 @@
+<resources>
+    
+   <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+        <item name="colorAccent">@color/myAccentColor</item>
+        <item name="android:textColorPrimary">@color/myTextPrimaryColor</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="windowActionModeOverlay">true</item>
+		<item name="android:textColor">@color/black</item>
+        <item name="android:windowBackground">@color/myWindowBackground</item> 
+    </style>
+    
+    <style name="AppThemeBar" parent="AppTheme">
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="">
+        <item name="android:theme">@style/Toolbar</item>
+    </style>
+    
+    <style name="Toolbar" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:textColorSecondary">@color/extra_light_gray</item>
+        <item name="titleTextAppearance">@style/Toolbar_Title</item>
+    </style>
+
+    <style name="Toolbar_Popup" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+    <item name="android:textColorPrimary">#fff</item>
+    <item name="android:textColorSecondary">@color/extra_light_gray</item>
+    </style>
+
+    <style name="Toolbar_Title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Clean Usage of listTitle -->
+    <style name="listTitleStyle">
+        <item name="android:lineSpacingExtra">1dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textDirection">locale</item>
+    </style>
+    
+    <style name="listStyleNoPadding">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferenceScreen" >
+<PreferenceCategory
+   android:summary="@string/settings_general_summary"
+   android:title="@string/settings_general"
+   android:key="general" >
+   <CheckBoxPreference
+     android:key="menuOpenOnStart"
+     android:summary="@string/settings_showmenu_summary"
+     android:title="@string/settings_showmenu" 
+     android:defaultValue="false"/>
+   <ListPreference
+     android:key="fontSize"
+     android:title="@string/settings_fontsize"
+     android:summary="@string/settings_fontsize_summary"
+     android:entries="@array/fontentries"
+     android:entryValues="@array/fontvalues"
+     android:defaultValue="16"  />
+ </PreferenceCategory>
+ 
+  <PreferenceCategory
+     android:summary="@string/settings_other_summary"
+     android:title="@string/settings_other"
+     android:key="other" >
+      <Preference
+      android:key="about"
+      android:summary="@string/settings_aboutus_summary"
+      android:title="@string/settings_aboutus" />
+      <Preference
+      android:key="rate"
+      android:summary="@string/settings_rate_summary"
+      android:title="@string/settings_rate" />
+      
+      </PreferenceCategory>
+ 
+  <PreferenceCategory
+     android:summary="@string/settings_billing_summary"
+     android:title="@string/settings_billing"
+     android:key="billing" >
+      <Preference
+      android:key="purchase"
+      android:summary="@string/settings_purchase_summary"
+      android:title="@string/settings_purchase" />
+   </PreferenceCategory>
+     
+</PreferenceScreen>

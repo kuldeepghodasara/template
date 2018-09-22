@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_check_out"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/total_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_xl"
+        android:background="@color/grey_lighter"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:id="@+id/price_holder">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:textAllCaps="true"
+                android:textSize="@dimen/textsize_xs"/>
+
+            <TextView
+                android:id="@+id/textViewCheckOutPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="@dimen/textsize_l"
+                android:textStyle="bold"
+                android:text="9995 USD"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/tax_notice"
+                android:textColor="@color/dim_gray"
+                android:textSize="@dimen/textsize_xxs"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFinish"
+            android:text="@string/checkout"
+            android:textColor="#FFF"
+            android:elevation="2dp"
+            android:paddingLeft="@dimen/spacing_l"
+            android:paddingRight="12dp"
+            android:background="@color/myAccentColor"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycleViewCheckOut"
+        android:background="@color/white"
+        android:layout_above="@+id/total_holder"
+        android:layout_below="@+id/toolbar_actionbar" />
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_above="@+id/total_holder"/>
+
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/default_padding"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart_empty_title"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_xxl"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:layout_above="@+id/cart_empty_subtitle"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart_empty_subtitle"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:textColor="@color/dark_gray"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/cart_empty_subtitle" />
+        
+    </RelativeLayout>
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/loading_view"
+        layout="@layout/fragment_wc_loading"/>
+
+</RelativeLayout>

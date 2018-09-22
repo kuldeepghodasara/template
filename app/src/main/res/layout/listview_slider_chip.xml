@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.apg.mobile.roundtextview.BadgeView
+        android:id="@+id/category_chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_xs"
+        android:paddingBottom="@dimen/spacing_m"
+        android:paddingLeft="@dimen/spacing_xl"
+        android:paddingRight="@dimen/spacing_xl"
+        android:paddingTop="@dimen/spacing_m"
+        app:mainText="@string/no_results"
+        app:mainTextColor="#fff"
+        app:mainAllCorner="16dp"
+        app:mainTextSize="5dp"
+        app:subTextSize="5dp"
+        app:subAllCorner="16dp"
+        app:mainBgColor="@color/myPrimaryColor" />
+
+</FrameLayout>

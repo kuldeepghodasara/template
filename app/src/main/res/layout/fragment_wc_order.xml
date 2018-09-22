@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/woocommerce_padding"
+    android:background="@color/white"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/orderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:background="@color/light_gray"
+            android:padding="@dimen/spacing_xs"
+            android:text="Shipped"
+            android:paddingLeft="@dimen/spacing_l"
+            android:paddingStart="@dimen/spacing_l"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_xs" />
+
+        <TextView
+            android:id="@+id/orderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:paddingTop="@dimen/spacing_m"
+            android:text="@string/empty_textview"
+            android:paddingEnd="@dimen/spacing_xl"
+            android:paddingRight="@dimen/spacing_xl"
+            android:textColor="@color/myPrimaryColor"
+            android:textSize="@dimen/textsize_s" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/spacing_m"
+        android:paddingLeft="@dimen/spacing_l"
+        android:paddingRight="@dimen/spacing_l"
+        android:paddingTop="@dimen/spacing_s">
+
+        <TextView
+            android:id="@+id/orderDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/spacing_xxs"
+            android:text="@string/empty_textview"
+            android:textColor="@color/grey_dark"
+            android:textDirection="locale"
+            android:textSize="@dimen/textsize_m" />
+
+        <TextView
+            android:id="@+id/orderTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif"
+            android:text="$12.33"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_l"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

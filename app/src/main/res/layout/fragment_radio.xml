@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <com.cleveroad.audiovisualization.GLAudioVisualizationView
+        android:id="@+id/visualizer_view"
+        android:layout_width= "match_parent"
+        android:layout_height="match_parent"
+        app:av_bubblesSize="50dp"
+        app:av_bubblesRandomizeSizes="true"
+        app:av_wavesHeight="60dp"
+        app:av_wavesFooterHeight="250dp"
+        app:av_wavesCount="7"
+        app:av_layersCount="3"
+        app:av_wavesColors="@array/radio_colors"
+        app:av_backgroundColor="@color/radio_bg_color"
+        />
+
+    <ImageView
+        android:id="@+id/albumArt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:src="@drawable/placeholder_coverart"
+        android:scaleType="centerCrop"
+        android:foreground="@color/black_more_translucent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:animateLayoutChanges="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_xxl">
+
+        <TextView
+            android:id="@+id/now_playing_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingBottom="@dimen/spacing_s"
+            android:text="@string/now_playing"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_xxl"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/now_playing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="@dimen/spacing_xl"
+            android:text="@string/empty_textview"
+            android:textSize="@dimen/textsize_m"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_xxl"
+            app:srcCompat="@drawable/exomedia_ic_pause_white"
+            app:fabSize="normal" />
+
+        <TextView
+            android:id="@+id/already_playing_tooltip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_tooltip"
+            android:padding="10dp"
+            android:text="@string/radio_playing_other"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

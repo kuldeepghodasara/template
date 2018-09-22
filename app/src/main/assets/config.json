@@ -1,0 +1,484 @@
+[
+  {
+    "title":"Government Jobs",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"Latest Government Jobs",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs",
+          ""
+        ]
+      },
+
+      {
+        "title":"Latest Exam Results",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs",
+          "exam-results"
+        ]
+      },
+
+      {
+        "title":"Recent Exam Results",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs",
+          "zresult"
+        ]
+      }
+    ]
+  },
+
+  {
+    "title":"Bank Jobs",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"Bank Jobs",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "bank-jobs"
+        ]
+      },
+
+      {
+        "title":"Preparation Videos",
+        "provider":"youtube",
+        "arguments":[
+          "PLN9q72lYSiywOrE2tcstPvFxqnE4eBbhX",
+          "playlist"
+        ]
+      }
+    ]
+  },
+
+  {
+    "title":"SSC Jobs",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"SSC Jobs",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "10th"
+        ]
+      },
+
+      {
+        "title":"SSC Latest Updates",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "ssc"
+        ]
+      },
+
+      {
+        "title":"Preparation Videos",
+        "provider":"youtube",
+        "arguments":[
+          "PLri6Llds7dCr7fQtSy3w7auxVpezguPSk",
+          "playlist"
+        ]
+      }
+    ]
+  },
+
+  {
+    "title":"Central Government Jobs",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"Central Government Jobs",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "central-govt-jobs"
+        ]
+      },
+
+      {
+        "title":"Preparation Videos",
+        "provider":"youtube",
+        "arguments":[
+          "PLPfDaJ1HpVHGICYckJv-Pzt-bj_XhUQih",
+          "playlist"
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "title":"Diploma Jobs",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"Diploma Jobs",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "diploma"
+        ]
+      },
+
+      {
+        "title":"Preparation Videos",
+        "provider":"youtube",
+        "arguments":[
+          "PLf4DvBTZUH4ectlGeVJq2nr0455EDD8nT",
+          "playlist"
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "title":"UPSC Jobs",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"UPSC Jobs",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "upsc-psc"
+        ]
+      },
+
+      {
+        "title":"Preparation Videos",
+        "provider":"youtube",
+        "arguments":[
+          "PLczQmW1xmoIkvLhFC-PEFAuUbtIz9l3of",
+          "playlist"
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "title":"Railway Jobs",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"Railway Jobs",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "railway-jobs"
+        ]
+      },
+
+      {
+        "title":"Preparation Videos",
+        "provider":"youtube",
+        "arguments":[
+          "PL4t_secZTPn7YvjmE7FccceW4cEXA8KHF",
+          "playlist"
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "title":"Police Jobs",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"Police Jobs",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "defense-police"
+        ]
+      },
+
+      {
+        "title":"Preparation Videos",
+        "provider":"youtube",
+        "arguments":[
+          "PL4t_secZTPn6l7M5NakUEv0dZUkxDDQMd",
+          "playlist"
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "title":"Defence Jobs",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"Defence Jobs",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "defence-jobs"
+        ]
+      },
+
+      {
+        "title":"Preparation Videos",
+        "provider":"youtube",
+        "arguments":[
+          "PLxQoodQUuAUKuCagR5IbjQ6GfHsqJqTPH",
+          "playlist"
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "title":"Engineering Jobs",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"Engineering Jobs",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "engineering-technical-jobs"
+        ]
+      },
+
+      {
+        "title":"Preparation Videos",
+        "provider":"youtube",
+        "arguments":[
+          "PLY3DFj1jjj0URoyHOnxuau6l0EgzOtoHI",
+          "playlist"
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "title":"PSC Jobs",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"PSC Jobs",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "upsc-psc"
+        ]
+      },
+
+      {
+        "title":"Preparation Videos",
+        "provider":"youtube",
+        "arguments":[
+          "PLSEdRtd3Fse_7VsCtZzmpiNl9XizIUzTn",
+          "playlist"
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "title":"Medical Jobs",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"Medical Jobs",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "hospital-jobsmedical-jobs"
+        ]
+      },
+
+      {
+        "title":"Preparation Videos",
+        "provider":"youtube",
+        "arguments":[
+          "PLxcQ0xuV8WCRtKTizWFpAVVUyYHElYEK5",
+          "playlist"
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "title":"Teacher Jobs",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"Teacher Jobs",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "teacher-jobs"
+        ]
+      },
+
+      {
+        "title":"Preparation Videos",
+        "provider":"youtube",
+        "arguments":[
+          "PLCuseMNr7SZEsP1ArzOrEof-ercWXonXg",
+          "playlist"
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "title":"Walk in Interview",
+    "drawable":"",
+    "submenu":"Home",
+    "iap":false,
+    "tabs":[
+
+      {
+        "title":"Walk in Interview",
+        "provider":"wordpress",
+        "arguments":[
+          "http://smsquotes.org/jobs/",
+          "interview-results"
+        ]
+      }
+    ]
+  },
+  {
+    "title":"More Apps",
+    "drawable":"",
+    "submenu":"Other",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"More Apps",
+        "provider":"custom",
+        "arguments":[
+          "https://play.google.com/store/apps/developer?id=TeenBande", "url"
+        ]
+      }
+    ]
+
+  },
+
+  {
+    "title":"Share",
+    "drawable":"",
+    "submenu":"Other",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"Share",
+        "provider":"custom",
+        "arguments":[
+          "whatsapp://send?text=Get Latest Banking Jobs, SSC Jobs, UPSC Jobs, Diploma Jobs, Central Government jobs, Railway Jobs, Police Jobs, Defence Jobs, Engineering Jobs, PSC Jobs, Medical Jobs, Teacher Jobs and Updates at https://play.google.com/store/apps/details?id=com.peoplethink.governmentjob", "url"
+        ]
+      }
+    ]
+
+  },
+
+
+
+  {
+    "title":"Rate Us 5 Star",
+    "drawable":"",
+    "submenu":"Other",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"Rate Us 5 Star",
+        "provider":"custom",
+        "arguments":[
+          "https://play.google.com/store/apps/details?id=com.peoplethink.governmentjob", "url"
+        ]
+      }
+    ]
+
+  },
+
+  {
+    "title":"Help",
+    "drawable":"",
+    "submenu":"Other",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"Help",
+        "provider":"custom",
+        "arguments":[
+          "mailto:mr.kathiyavadi@gmail.com", "url"
+        ]
+      }
+    ]
+
+  },
+
+
+  {
+    "title":"Settings",
+    "drawable":"",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"",
+        "provider":"custom",
+        "arguments":[
+          "com.peoplethink.governmentjob.SettingsFragment", "fragment"
+        ]
+      }
+    ]
+  }
+]

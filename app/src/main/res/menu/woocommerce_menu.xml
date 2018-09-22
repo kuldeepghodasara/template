@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:universal="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/menu_cart"
+       	universal:showAsAction="ifRoom"
+        android:icon="@drawable/ic_bag"
+        android:title="@string/view_cart"/>
+
+
+</menu>
